@@ -1,22 +1,26 @@
 import React from 'react';
+const divStyle = {
+  color: 'blue',
+    'text-align': 'justify',
+}
 class CardCartaoVisita extends React.Component{
+    
     render(){
         return (
-            <div class="col s12 m8 offset-m2 l6 offset-l3">
+            <div class="col s12 m12 l12 ">
                 <div id={this.props.id} class="section scrollspy">
-                    <div class="card-panel grey lighten-5 z-depth-1">
-                        <div class="row valign-wrapper">
-
-                            <div class="col s8">
-                                <h3>Teste de titulo</h3>
-                                <br/>
-                                <span class="black-text">
-                                    This is a square image. Add the "circle" class to it to make it appear circular.
-                                </span>
+                    <div class="card-panel hoverable  lighten-5 z-depth-1">
+                        <div class="row">
+                            <div class="col s12 m3">
+                                <img src="https://lorempixel.com/150/150/nature/6" alt="" class="circle responsive-img" />
                             </div>
-                            <div class="col s4">
-                                <img src="https://lorempixel.com/100/190/nature/6" alt="" class="circle responsive-img" />
+                            <div class="col s12 m9">
+                                <h4>Taiane Martins Costa</h4>
+                                <p class="black-text intro-pessoal" >
+                                    Advogada atuante na área de direito de família. Trabalha prestando assessoramento jurídico e serviço de correspondência em Pelotas e região.
+                                </p>
                             </div>
+         
                         </div>
                     </div>
                 </div>

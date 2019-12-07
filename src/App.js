@@ -12,13 +12,13 @@ function App() {
   return (
     <div className="App ">
         <Navbar/>
-        <div class='container'>
+        <div class='container row'>
         
             <CardCartaoVisita id='sobre' />
-            <CardTopico id='m1' alinhamento='left' />
-            <CardTopico id='m2' alinhamento='right' />
-            <CardTopico id='m3' alinhamento='left' />
-            <CardTopico id='m4' alinhamento='right' />
+            <CardTopico id='m1' alinhamento='left' titulo='Divórcio'/>
+            <CardTopico id='m2' alinhamento='right' titulo='Divórcio' />
+            <CardTopico id='m3' alinhamento='left' titulo='Divórcio' />
+            <CardTopico id='m4' alinhamento='right' titulo='Divórcio' />
             <Contato id='contato'/>
         </div>
     </div>
