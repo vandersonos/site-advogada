@@ -1,7 +1,7 @@
 import React from 'react';
 class CardTopico extends React.Component{
     render(){
-        if(this.props.alinhamento == 'left'){
+        if(this.props.alinhamento === 'left'){
             return (
             <div class="col s12 m6 l6">
                 <div id={this.props.id} class="section scrollspy">
