@@ -16,9 +16,9 @@ function App() {
         
             <CardCartaoVisita id='sobre' />
             <CardTopico id='m1' alinhamento='left' titulo='Divórcio'/>
-            <CardTopico id='m2' alinhamento='right' titulo='Divórcio' />
-            <CardTopico id='m3' alinhamento='left' titulo='Divórcio' />
-            <CardTopico id='m4' alinhamento='right' titulo='Divórcio' />
+            <CardTopico id='m2' alinhamento='right' titulo='Guarda' />
+            <CardTopico id='m3' alinhamento='left' titulo='Penssão' />
+            <CardTopico id='m4' alinhamento='right' titulo='Adocão' />
             <Contato id='contato'/>
         </div>
     </div>
