@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #fafafa !important;
 }
 
 code {
@@ -13,4 +15,14 @@ code {
 }
 .intro-pessoal{
     text-align: 'justify'
+}
+.card-topico{
+    min-height: 270px!important;
+}
+nav{
+    background-color: #d4af37!important;
+}
+.header{
+    font-weight:300;
+    color:#d4af37;
 }

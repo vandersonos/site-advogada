@@ -12,7 +12,7 @@ class CardCartaoVisita extends React.Component{
                     <div class="card-panel hoverable  lighten-5 z-depth-1">
                         <div class="row">
                             <div class="col s12 m3">
-                                <img src="taiane_perfil.jpeg" alt="" class="circle responsive-img" />
+                                <img src="img/taiane_perfil.jpeg" alt="" class="circle responsive-img" />
                             </div>
                             <div class="col s12 m9">
                                 <h4>Taiane Martins Costa</h4>

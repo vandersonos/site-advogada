@@ -11,16 +11,18 @@ class Navbar extends React.Component{
     return false; 
     }
     render(){
+        let itens = [];
+        for (const [index, value] of this.props.artigos.entries()) {
+            let url = '#'+value.id;
+            itens.push(<li><a onClick={this.escondeMenu} href={url}>{value.titulo}</a></li>);
+        }
+
 
         return (
             <div >
                 <ul id="dropdown1" class="dropdown-content">
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#m1">slide 1</a></li>
-                    <li><a href="#m2">slide 2</a></li>
-                    <li><a href="#m2">slide 3</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#m4">slide 4</a></li>
+                    {itens}
                     <li><a href="#contato">Contato</a></li>
                 </ul>
                 <nav>
@@ -46,10 +48,7 @@ class Navbar extends React.Component{
                 </nav>
                 <ul class="sidenav section table-of-contents" id="mobile-demo">
                     <li><a onClick={this.escondeMenu} href="#sobre">Sobre</a></li>
-                    <li><a onClick={this.escondeMenu} href="#m1">slide 1</a></li>
-                    <li><a onClick={this.escondeMenu} href="#m2">slide 2</a></li>
-                    <li><a onClick={this.escondeMenu} href="#m3">slide 3</a></li>
-                    <li><a onClick={this.escondeMenu} href="#m4">slide 4</a></li>
+                    {itens}
                     <li><a onClick={this.escondeMenu} href="#contato">Contato</a></li>
                 </ul>
             </div>
