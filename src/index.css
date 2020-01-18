@@ -26,3 +26,17 @@ nav{
     font-weight:300;
     color:#d4af37;
 }
+.head-pagina-facebook{
+    margin-bottom: 1rem;
+}
+.form-contato-acoes{
+    margin-top: 1rem;
+}
+.form-title-pagina-facebook{
+    margin-bottom: 2rem;
+}
+@media only screen and (max-width: 600px) {
+  button {
+    font-size: 10px!important;
+  }
+}
