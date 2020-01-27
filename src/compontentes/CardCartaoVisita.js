@@ -17,7 +17,8 @@ class CardCartaoVisita extends React.Component{
                             <div class="col s12 m9">
                                 <h4>Taiane Martins Costa</h4>
                                 <p class="black-text intro-pessoal" >
-                                    Advogada atuante na área de direito de família. <br/>Trabalha prestando assessoramento jurídico e serviço de correspondência em Pelotas e região.
+                                    Advogada Especialista em Direito Civel, que atua na área de Direito de Família. <br/>
+                                    Trabalha prestando suporte jurídico e serviço de correspondência em Pelotas e região.
                                 </p>
                             </div>
          

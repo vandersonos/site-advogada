@@ -14,30 +14,55 @@ function App() {
             titulo:'Divórcio',
             id:'divorcio',
             img:'img/divorcio.jpg',
-            texto:"Advogada atuante na área de direito de família. Trabalha prestando assessoramento jurídico e serviço de correspondência em Pelotas e região."
+            texto: "",
+            itens:[
+                    "Divórcio Judicial Litigioso",
+                    "Divórcio Judicial Consensual",
+                    "Dissolução de União Estável",
+                    "Anulação de Casamento"
+            ]
         },
         {
             id:'guarda',
             titulo:'Guarda',
             img:'img/guarda.jpg',
-            texto:"Advogada atuante na área de direito de família. Trabalha prestando assessoramento jurídico e serviço de correspondência em Pelotas e região."
+            texto: "",
+            itens:[
+                    "Guarda Provisória",
+                    "Regulamentação de Visitas",
+                    "Busca e Apreensão de crianças e adolescentes",
+                    "Alteração de Guarda"
+            ]
+        
         },
         {
             id:'pensao',
-            titulo:'Pensão',
+            titulo:'Pensão Alimentícia',
             img:'img/pensao-alimenticia.jpg',
-            texto:"Advogada atuante na área de direito de família. Trabalha prestando assessoramento jurídico e serviço de correspondência em Pelotas e região."
+            itens:[
+                "Proposição e/ou contestação",
+                "Investigação de paternidade",
+                "Negatória de Paternidade",
+                "Execução de Alimentos (pena de prisão/ penhora)"
+            ],
+            texto:""
         },
         {
-            id:'adocao',
-            titulo:'Adoção',
+            id:'inventario',
+            titulo:'Inventário',
             img:'img/adocao.jpg',
-            texto:"Advogada atuante na área de direito de família. Trabalha prestando assessoramento jurídico e serviço de correspondência em Pelotas e região."
+            itens:[
+                "Abertura de testamento",
+                "Remoção de Inventariante",
+                "Habilitação de Herdeiros",
+                "Nulidade de Testamento"
+            ],
+            texto:""
         }
     ];
     let itens = [];
      for (const [index, value] of artigos.entries()) {
-        itens.push(<CardTopico id={value.id} alinhamento='left' titulo={value.titulo} texto={value.texto} img={value.img}/>);
+        itens.push(<CardTopico id={value.id} alinhamento='left' titulo={value.titulo} texto={value.texto} img={value.img} itens={value.itens}/>);
     }
     return (
     <div className="App ">

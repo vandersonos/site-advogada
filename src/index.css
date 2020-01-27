@@ -40,3 +40,7 @@ nav{
     font-size: 10px!important;
   }
 }
+.collection{
+    border-left:none!important;
+    border-right: none!important;
+}
