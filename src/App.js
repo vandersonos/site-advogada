@@ -6,6 +6,7 @@ import CardCartaoVisita from './compontentes/CardCartaoVisita';
 import CardTopico from './compontentes/CardTopico.js';
 import Navbar from './compontentes/NavBar.js';
 import Contato from './compontentes/Contato.js';
+import CalculadoraPensao from './compontentes/calc-pensao/CalculadoraPensao.js';
 
 
 function App() {
@@ -71,6 +72,7 @@ function App() {
             <CardCartaoVisita id='sobre' />
             {itens}
             <Contato id='contato'/>
+            <CalculadoraPensao/>
         </div>
     </div>
   );
