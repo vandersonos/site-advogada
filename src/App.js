@@ -72,7 +72,6 @@ function App() {
             <CardCartaoVisita id='sobre' />
             {itens}
             <Contato id='contato'/>
-            <CalculadoraPensao/>
         </div>
     </div>
   );
