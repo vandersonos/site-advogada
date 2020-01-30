@@ -1,30 +1,93 @@
+:root{
+    --corpadraoAmareloForte:#c9a029;
+    --corpadraborda:#e3d3a4;
+    --corpadraoCinzaEscuro: #4b4d4e;
+    --corpadraoCinzaClaro:#e1e2e1;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    sans-serif; */
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
 
-  background-color: #fafafa !important;
+  background-color: var(--corpadraoCinzaClaro) !important;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+} */
+nav{
+    background-color:var(--corpadraoAmareloForte)!important;
+    font-family: 'Alice',monospace;
+}
+
+/* cartao visita */
+.cartaoVisita{
+        padding-top: 1rem!important;
+    padding-bottom: .1rem!important;
+}
+.circle{
+    border: 10px var(--corpadraborda) solid;
+    margin-left: -60px;
+}
+.nome{
+    font-family: Alice, monospace;
+    color:var(--corpadraoAmareloForte)!important;
+    font-size: 2.3rem;
+}
+.fotoCartao{
+    margin-left: -2rem!important;
+}
+.textoCartao{
+    margin-left: -2rem!important;
 }
 .intro-pessoal{
-    text-align: 'justify'
+    text-align: justify!important;
+    font-family: "Montsserat Extra Ligth", monospace;
+}
+
+/* topics */
+.header{
+    font-weight:300;
+    color:#4b4d4e;
+    font-family: "Montsserat Ligth", monospace;
 }
 .card-topico{
     min-height: 270px!important;
 }
-nav{
-    background-color: #d4af37!important;
+.card-panel{
+    border-radius: 10px 2px 10px 2px!important;
+    border-bottom: 3px #e1e2e1 solid;
 }
-.header{
-    font-weight:300;
-    color:#d4af37;
+.card{
+    border-radius: 14px 2px 10px 2px!important;
+    border-bottom: 30px var(--corpadraborda) solid!important;
+    background-color: #fafafa !important;
+}
+.row.card-topico-conteudo{
+    margin-bottom: -12px!important;
+}
+.card .card-image img {
+    border-radius: 14px 2px 0 0!important;
+}
+/* fim topics*/
+@media only screen and (max-width: 600px) {
+  button {
+    font-size: 10px!important;
+  }
+}
+.collection{
+    border-left:none!important;
+    border-right: none!important;
+    background-color: #fafafa !important;
+    border:none!important;
+}
+.collection .collection-item {
+    padding: 5px 10px!important;
+    background-color: #fafafa !important;
 }
 .head-pagina-facebook{
     margin-bottom: 1rem;
@@ -34,13 +97,4 @@ nav{
 }
 .form-title-pagina-facebook{
     margin-bottom: 2rem;
-}
-@media only screen and (max-width: 600px) {
-  button {
-    font-size: 10px!important;
-  }
-}
-.collection{
-    border-left:none!important;
-    border-right: none!important;
 }

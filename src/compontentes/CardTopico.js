@@ -5,21 +5,21 @@ class CardTopico extends React.Component{
         for (const [index, value] of this.props.itens.entries()) {
             itens.push(<li class='collection-item'>{value}</li>);
         }
-        let paragrafo = <div class="col s12 m8 l8 xl6 offset-xl1 "><ul class='collection'>{itens}</ul></div>;
-        let imagem = <div class="col s6 offset-s3 m4  l4 xl4 card-image"><img src={this.props.img} alt="" class="responsive-img" /></div>;
+        let paragrafo = <div class="col s6 m7 l7 xl6 offset-xl1 "><h4  class="header">{this.props.titulo}</h4><ul class='collection'>{itens}</ul></div>;
+        let imagem = <div class="col s6 offset-s3 m5 l5 xl4 card-image"><img src={this.props.img} alt="" class="responsive-img" /></div>;
         return (
             <div class="col s12 m12 l12 xl12 card-topico" >
                 <div id={this.props.id} class="section scrollspy">
-                    <h4  class="header">{this.props.titulo}</h4>
-                    <div class="card hoverable lighten-5 z-depth-1">            
+                    
+                    <div class="card hoverable grey lighten-5 z-depth-1">            
                         { this.props.alinhamento === 'left' &&
-                            <div class="row">
+                            <div class="row card-topico-conteudo">
                             {imagem}
                             {paragrafo}
                             </div>
                         }
                          { this.props.alinhamento !== 'left' &&
-                            <div class="row">
+                            <div class="row card-topico-conteudo">
                             {paragrafo}
                             {imagem}
                             </div>
