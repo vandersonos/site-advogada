@@ -51,7 +51,7 @@ function App() {
         {
             id:'inventario',
             titulo:'Inventário',
-            img:'img/adocao.jpg',
+            img:'img/inventario.jpg',
             itens:[
                 "Abertura de testamento",
                 "Remoção de Inventariante",

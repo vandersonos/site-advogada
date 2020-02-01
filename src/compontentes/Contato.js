@@ -66,16 +66,7 @@ class Contato extends React.Component{
                                             </button>
                                         </div>
                                     </div>
-                                    <div class='row'>
-                                        <div class='col'>
-                                            <img src='img/email.png'/>
-                                        </div>
-                                        <div class='col'>
-                                            <button class="btn waves-effect waves-light" onClick={(e) => this.enviarMensagemEmail(e)}>
-                                                Enviar email<i class="material-icons right hide-on-small-only">send</i>
-                                            </button>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                                 <div class="col s12 form-title-pagina-facebook">
                                     <h6 class="valign-wrapper">Ou acesse minha página no facebook</h6>
@@ -107,3 +98,14 @@ class Contato extends React.Component{
     }
 }
 export default Contato
+/*
+<div class='row'>
+                                        <div class='col'>
+                                            <img src='img/email.png'/>
+                                        </div>
+                                        <div class='col'>
+                                            <button class="btn waves-effect waves-light" onClick={(e) => this.enviarMensagemEmail(e)}>
+                                                Enviar email<i class="material-icons right hide-on-small-only">send</i>
+                                            </button>
+                                        </div>
+                                    </div>*/
