@@ -72,13 +72,10 @@ nav{
 }
 .card .card-image img {
     border-radius: 14px 2px 0 0!important;
+    max-height: 200px!important;
 }
 /* fim topics*/
-@media only screen and (max-width: 600px) {
-  button {
-    font-size: 10px!important;
-  }
-}
+
 .collection{
     border-left:none!important;
     border-right: none!important;
@@ -97,4 +94,40 @@ nav{
 }
 .form-title-pagina-facebook{
     margin-bottom: 2rem;
+}
+/* xs */
+@media (max-width:767px) {
+    button {
+        font-size: 10px!important;
+    }
+    .circle{
+        margin-left: 0px;
+    }
+    .fotoCartao{
+        margin-left: 0rem!important;
+    }
+    .textoCartao{
+        margin-left: 0rem!important;
+    }
+    .header{
+        text-align: center;
+    }
+}
+/* sm */
+@media (min-width:768px) {
+    .nome{
+        font-size: 2rem;
+    }
+    .circle{
+        margin-left: -40px;
+    }
+    
+}
+/* md */
+@media (min-width:992px) {
+
+}
+/* lg */
+@media (min-width:1200px) { 
+
 }

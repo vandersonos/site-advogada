@@ -12,27 +12,27 @@ class Navbar extends React.Component{
     }
     render(){
         let itens = [];
-        for (const [index, value] of this.props.artigos.entries()) {
+        for (const [key,value] of this.props.artigos.entries()) {
             let url = '#'+value.id;
-            itens.push(<li><a onClick={this.escondeMenu} href={url}>{value.titulo}</a></li>);
+            itens.push(<li key={key}><a onClick={this.escondeMenu} href={url}>{value.titulo}</a></li>);
         }
 
 
         return (
             <div >
                 <nav>
-                    <div class="nav-wrapper container">
-                        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-                            <i class="material-icons">menu</i>
+                    <div className="nav-wrapper container">
+                        <a href="#" data-target="mobile-demo" className="sidenav-trigger">
+                            <i className="material-icons">menu</i>
                         </a>
-                        <ul class="left hide-on-med-and-down ">
+                        <ul className="left hide-on-med-and-down ">
                             <li><a onClick={this.escondeMenu} href="#sobre">Sobre</a></li>
                             <li><a onClick={this.escondeMenu} href="#contato">Contato</a></li>
                             {itens}
                         </ul>
                     </div>
                 </nav>
-                <ul class="sidenav section table-of-contents" id="mobile-demo">
+                <ul className="sidenav section table-of-contents" id="mobile-demo">
                     {itens}
                     <li><a onClick={this.escondeMenu} href="#sobre">Sobre</a></li>
                     <li><a onClick={this.escondeMenu} href="#contato">Contato</a></li>

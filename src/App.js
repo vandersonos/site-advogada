@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import 'materialize-css/dist/css/materialize.min.css';
 import './App.css';
 import CardCartaoVisita from './compontentes/CardCartaoVisita';
 import CardTopico from './compontentes/CardTopico.js';
 import Navbar from './compontentes/NavBar.js';
 import Contato from './compontentes/Contato.js';
-import CalculadoraPensao from './compontentes/calc-pensao/CalculadoraPensao.js';
+// import CalculadoraPensao from './compontentes/calc-pensao/CalculadoraPensao.js';
 
 
 function App() {
@@ -62,13 +61,13 @@ function App() {
         }
     ];
     let itens = [];
-     for (const [index, value] of artigos.entries()) {
-        itens.push(<CardTopico id={value.id} alinhamento='left' titulo={value.titulo} texto={value.texto} img={value.img} itens={value.itens}/>);
+     for (let [key,value] of artigos.entries()) {
+        itens.push(<CardTopico key={key} id={value.id} alinhamento='left' titulo={value.titulo} texto={value.texto} img={value.img} itens={value.itens}/>);
     }
     return (
     <div className="App ">
         <Navbar artigos={artigos}/>
-        <div class='container row'>
+        <div className='container row'>
             <CardCartaoVisita id='sobre' />
             {itens}
             <Contato id='contato'/>
